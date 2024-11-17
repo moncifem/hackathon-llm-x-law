@@ -13,6 +13,8 @@ python-dotenv = "^1.0.1"
 trafilatura = "^1.12.2"
 bs4 = "^0.0.2"
 duckduckgo-search = "^6.3.5"
+yfinance = "^0.2.49"
+yahoo-fin = "^0.8.9.1"
 
 
 [build-system]

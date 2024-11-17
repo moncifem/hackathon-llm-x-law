@@ -1,0 +1,24 @@
+{
+    "tech_companies": {
+        "apple": "AAPL",
+        "microsoft": "MSFT",
+        "amazon": "AMZN",
+        "google": "GOOGL",
+        "alphabet": "GOOGL",
+        "meta": "META",
+        "facebook": "META",
+        "netflix": "NFLX",
+        "tesla": "TSLA",
+        "nvidia": "NVDA",
+        "intel": "INTC",
+        "amd": "AMD",
+        "adobe": "ADBE",
+        "salesforce": "CRM",
+        "oracle": "ORCL",
+        "ibm": "IBM",
+        "cisco": "CSCO",
+        "qualcomm": "QCOM",
+        "paypal": "PYPL",
+        "broadcom": "AVGO"
+    }
+}
