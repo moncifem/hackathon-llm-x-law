@@ -114,7 +114,7 @@ def analyze_innovation_and_skills(products1, products2, company1, company2):
     openai_service = OpenAIService(get_openai_api_key())
     
     innovation_prompt = f"""
-    Based on these product lists, analyze the innovation profile of both companies:
+    Based on these product lists, analyze the knowhow of both companies:
 
     {company1} Products:
     {chr(10).join('- ' + p for p in products1)}
@@ -209,7 +209,7 @@ with col2:
     )
 
 # Main Page
-st.title("Company Product Analyzer")
+st.title("M&As Advisor")
 
 # Initialize Product Extractor Service
 try:
@@ -225,9 +225,9 @@ if company1 and company2:
         # First, get ticker information for both companies
         ticker1, full_name1 = get_company_info(company1)
         ticker2, full_name2 = get_company_info(company2)
-
+        st.markdown("---")
         # Display company information section
-        st.header("Company Information")
+        st.header("1. Market Landscape Research")
         info_col1, info_col2 = st.columns(2)
 
         with info_col1:
@@ -311,7 +311,7 @@ if company1 and company2:
                     }
 
             # Product Comparison Section
-            st.header("Product Portfolio Comparison")
+            st.header("2. Competitive Assessment")
             if company1 in results and company2 in results:
                 with st.spinner("Analyzing product portfolios..."):
                     # Get comparison results
@@ -329,7 +329,7 @@ if company1 and company2:
                         st.markdown(competitive_analysis)
 
                 # Innovation and Technical Capabilities Analysis
-                st.header("Innovation and Technical Capabilities Analysis")
+                st.header("3. Innovation and Technical Capabilities Analysis")
                 with st.spinner("Analyzing innovation and technical capabilities..."):
                     innovation_analysis, skills_analysis, knowhow_analysis = analyze_innovation_and_skills(
                         results[company1]['products'],

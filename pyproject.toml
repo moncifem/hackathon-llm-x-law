@@ -15,6 +15,7 @@ bs4 = "^0.0.2"
 duckduckgo-search = "^6.3.5"
 yfinance = "^0.2.49"
 yahoo-fin = "^0.8.9.1"
+plotly = "^5.24.1"
 
 
 [build-system]
